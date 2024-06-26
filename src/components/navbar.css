@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-nav{
+    width: 100%;
+    height: 4rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    box-shadow: rgba(50,50,93,0.5) 0px 50px 100px -20px,
+                     rgba(0,0,0,0.7) 0px 30px 60px -30px;
+}
+.logo{
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+}
+.menu-link{
+    grid-column: 3/4;
+    align-items: center;
+}
+.menu-link ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-link ul li{
+    font-size: 1.2rem;
+}
+.menu-link ul li a{
+     color: rgba(0,0,3,0.8);
+     transition: 0.5s;
+     text-transform: capitalize;
+}
+.menu-link ul li:hover > a{
+    color: rgba(0,0,3,1);
+    transition: 0.5s;
+    transform-origin: left;
+    text-decoration: underline;
+}
+
+.icons{
+    grid-column: 4/5;
+}
+.icons ul{
+    display: grid;
+    grid-template-columns: 3fr repeat(3,1fr);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icons ul li{
+    text-align: right;
+}
+.icons ul li:first-child{
+    grid-column: 2/3;
+}
+.fb{
+    color: #3498db;
+    font-size: 1.3rem;
+}
+.insta{
+    color: #8e44ad;
+    font-size: 1.3rem;
+
+}
+.yt{
+    color: #e74c3c;
+    font-size: 1.3rem;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem auto;
+}
+p{
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: #8e44ad;
+}
+h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: #3498db;
+}

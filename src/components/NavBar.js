@@ -1,4 +1,5 @@
 import React from 'react';
+import './navbar.css'
 import { FaFacebookSquare, FaInstagram, FaYoutube} from "react-icons/fa";
 
 const NavBar = () => {
@@ -22,9 +23,9 @@ const NavBar = () => {
     </div>
     <div className="icons">
         <ul className="media-desktop">
-            <li><a href="#"></a><FaFacebookSquare/></li>
-            <li><a href="#"></a><FaInstagram/></li>
-            <li><a href="#"></a><FaYoutube/></li>
+            <li><a href="#" ></a><FaFacebookSquare className='fb'/></li>
+            <li><a href="#" ></a><FaInstagram className='insta'/></li>
+            <li><a href="#" ></a><FaYoutube className='yt' /></li>
         </ul>
     </div>
     </nav>
