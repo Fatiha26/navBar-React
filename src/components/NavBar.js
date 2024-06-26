@@ -29,6 +29,10 @@ const NavBar = () => {
     </div>
     </nav>
     {/* nav ends here */}
+    <section className="hero-section">
+        <p>Welcome To</p>
+        <h1>React Navbar Project</h1>
+    </section>
     </>
   )
 }
