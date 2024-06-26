@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css'
 import { FaFacebookSquare, FaInstagram, FaYoutube, FaHamburger} from "react-icons/fa";
 
 const NavBar = () => {
+    const [show,setShow] = useState(false);
   return (
     <>
     <nav className='main-nav'>
@@ -13,7 +14,7 @@ const NavBar = () => {
             <span>F</span>atiha
         </h2>
     </div>
-    <div className="menu-link">
+    <div className={show?"menu-link ham-menu" : "menu-link"}>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">About</a></li>
@@ -28,12 +29,14 @@ const NavBar = () => {
             <li><a href="#" ></a><FaYoutube className='yt' /></li>
         </ul>
         <div className="ham-menu">
-            <a href="#">
+            <a href="#" onClick={()=>{
+                setShow(!show)
+            }}>
             <FaHamburger/>
             </a>
         </div>
     </div>
-    </nav>
+</nav>
     {/* nav ends here */}
     <section className="hero-section">
         <p>Welcome To</p>

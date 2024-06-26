@@ -111,6 +111,22 @@ h1{
     }
     .menu-link{
         display: none;
+        transition: all 2s linear;      
+    }
+    .menu-link ul{
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.4);
+        padding: 1rem;
+        width: 100%;
+        position: absolute;
+        left: 74%;
+        top: 100%;
+    }
+    .menu-link ul li{
+        padding-bottom: 1rem;
+    }
+    .menu-link ul li a{
+        color: #fff;
     }
     .icons .media-desktop{
         height: 0;
@@ -119,6 +135,17 @@ h1{
     .ham-menu{
         display: block;
         font-size: 2rem;
+        grid-template-rows: 2/4;
+        position: relative;
+        z-index: 99;
+        background-color: #fff;
+        height: 4rem;
+        display: grid;
+        align-items: center;
+        padding-left: 2rem;
+        transition: all 2s linear;
+        transform-origin: top;
         /* color: #e74c3c; */
     }
+    
 }
