@@ -91,3 +91,34 @@ h1{
     letter-spacing: 3px;
     color: #3498db;
 }
+.ham-menu{
+    display: none;
+}
+
+/* media queries */
+
+@media (max-width: 1080px){
+    .main-nav{
+        height: 3rem;
+        grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+    }
+}
+
+@media (max-width: 998px){
+    .main-nav{
+        height: 2rem;
+        grid-template-columns: 2rem 2fr 3fr 2fr 2rem;
+    }
+    .menu-link{
+        display: none;
+    }
+    .icons .media-desktop{
+        height: 0;
+        display: none;
+    }
+    .ham-menu{
+        display: block;
+        font-size: 2rem;
+        /* color: #e74c3c; */
+    }
+}

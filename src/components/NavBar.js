@@ -1,6 +1,6 @@
 import React from 'react';
 import './navbar.css'
-import { FaFacebookSquare, FaInstagram, FaYoutube} from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaYoutube, FaHamburger} from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -27,6 +27,11 @@ const NavBar = () => {
             <li><a href="#" ></a><FaInstagram className='insta'/></li>
             <li><a href="#" ></a><FaYoutube className='yt' /></li>
         </ul>
+        <div className="ham-menu">
+            <a href="#">
+            <FaHamburger/>
+            </a>
+        </div>
     </div>
     </nav>
     {/* nav ends here */}
